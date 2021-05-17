@@ -5,6 +5,7 @@
 <body>
     <header>
         <h1>${helloMessage}</h1>
+        <h3>age parameter is ${age}</h3>
         <p>${welcomeMessage}</p>
     </header>
 
