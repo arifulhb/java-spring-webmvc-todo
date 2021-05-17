@@ -1,3 +1,5 @@
 com/arifulhaque/config/WebAppInitializer.class
 com/arifulhaque/controller/WelcomeController.class
+com/arifulhaque/service/WelcomeServiceImpl.class
+com/arifulhaque/service/IService.class
 com/arifulhaque/config/WebConfig.class
