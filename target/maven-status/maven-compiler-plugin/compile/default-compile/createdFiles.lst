@@ -1,5 +1,6 @@
 com/arifulhaque/model/TodoItem.class
 com/arifulhaque/util/Mappings.class
+com/arifulhaque/util/AttributeNames.class
 com/arifulhaque/service/WelcomeServiceImpl.class
 com/arifulhaque/controller/TodoItemController.class
 com/arifulhaque/service/TodoItemService.class

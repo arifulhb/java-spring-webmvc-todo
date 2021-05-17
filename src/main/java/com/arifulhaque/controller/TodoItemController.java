@@ -1,14 +1,22 @@
 package com.arifulhaque.controller;
 
 import com.arifulhaque.model.TodoData;
+import com.arifulhaque.model.TodoItem;
 import com.arifulhaque.service.TodoItemService;
+import com.arifulhaque.util.AttributeNames;
 import com.arifulhaque.util.Mappings;
 import com.arifulhaque.util.ViewNames;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
+import java.time.LocalDate;
+
+@Slf4j
 @Controller
 public class TodoItemController {
 
@@ -33,6 +41,21 @@ public class TodoItemController {
     @GetMapping(Mappings.ITEMS)
     public String items() {
         return ViewNames.ITEMS_LIST;
+    }
+
+    @GetMapping(Mappings.ADD_ITEMS)
+    public String addEditItem(Model model) {
+        TodoItem todoItem = new TodoItem(1, "", "", LocalDate.now());
+        model.addAttribute(AttributeNames.TODO_ITEM, todoItem);
+
+        return ViewNames.ITEMS_ADD;
+    }
+
+    @PostMapping(Mappings.ADD_ITEMS)
+    public String processItem(@ModelAttribute(AttributeNames.TODO_ITEM) TodoItem todoItem) {
+        log.info("todoItem from from = {}", todoItem);
+        todoItemService.addItem(todoItem);
+        return "redirect:/" + Mappings.ITEMS;
     }
 
 }
