@@ -20,6 +20,7 @@ public class TodoData {
         addItem(new TodoItem(2, "second task", "Work Hard",  LocalDate.now()));
         addItem(new TodoItem(3, "Third task", "Work Hard",  LocalDate.now()));
         addItem(new TodoItem(4, "forth task", "Work Hard",  LocalDate.now()));
+        addItem(new TodoItem(5, "fifth task", "Work Hard",  LocalDate.now()));
     }
 
     // public methods

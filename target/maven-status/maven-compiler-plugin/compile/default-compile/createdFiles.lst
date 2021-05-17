@@ -1,10 +1,12 @@
-com/arifulhaque/config/WebAppInitializer.class
-com/arifulhaque/controller/WelcomeController.class
 com/arifulhaque/model/TodoItem.class
 com/arifulhaque/util/Mappings.class
 com/arifulhaque/service/WelcomeServiceImpl.class
-com/arifulhaque/util/ViewNames.class
 com/arifulhaque/controller/TodoItemController.class
+com/arifulhaque/service/TodoItemService.class
+com/arifulhaque/config/WebAppInitializer.class
+com/arifulhaque/controller/WelcomeController.class
+com/arifulhaque/util/ViewNames.class
 com/arifulhaque/service/IService.class
+com/arifulhaque/service/TodoItemServiceImpl.class
 com/arifulhaque/config/WebConfig.class
 com/arifulhaque/model/TodoData.class
