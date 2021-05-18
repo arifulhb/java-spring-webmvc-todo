@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import java.time.LocalDate;
 
 @Data
-@EqualsAndHashCode(of = {"id", "title"})
+@EqualsAndHashCode(of = "id")
 public class TodoItem {
 
     // == fields ==
